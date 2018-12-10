@@ -21,13 +21,15 @@ app.use(session({
 
 // 몽고DB 연결
 function connectDB() {
-  var databaseUrl = "mongodb://localhost:27017/testdb";
+  var databaseUrl = "mongodb://<admin>:<asdf1234>@ds123664.mlab.com:23664/tictactoetest"; 
+  //서버-db가 모두 같은 컴퓨터에 설치되어 있다면 db주소는 localhost임
+  //이제 바꿔주어야 함
 
   // DB 연결
   mongodb.connect(databaseUrl, function(err, database) {
     if (err) throw err;
     console.log('DB 연결 완료! : ' + databaseUrl);
-    app.set('database', database.db('testdb'));
+    app.set('database', database.db('tictactoetest'));
   });
 }
 connectDB();

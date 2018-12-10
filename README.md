@@ -1,1 +1,1 @@
-# tictactoe_server
+# ttt-server
