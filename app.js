@@ -21,7 +21,7 @@ app.use(session({
 
 // 몽고DB 연결
 function connectDB() {
-  var databaseUrl = "mongodb://<admin>:<asdf1234>@ds123664.mlab.com:23664/tictactoetest"; 
+  var databaseUrl = "mongodb://admin:asdf1234@ds123664.mlab.com:23664/tictactoetest"; 
   //서버-db가 모두 같은 컴퓨터에 설치되어 있다면 db주소는 localhost임
   //이제 바꿔주어야 함
 
